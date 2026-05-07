@@ -1,0 +1,21 @@
+[general]
+duration        = 0
+bufferSecs      = 2
+reconnect       = yes
+
+[input]
+device          = plughw:2,0
+sampleRate      = 16000
+bitsPerSample   = 16
+channel         = 1
+
+[icecast2-0]
+server          = 127.0.0.1
+port            = 8000
+password        = mic123
+mountPoint      = stream
+name            = Pi USB Mic
+description     = Live Mic Stream
+format          = mp3
+bitrateMode     = cbr
+bitrate         = 64
